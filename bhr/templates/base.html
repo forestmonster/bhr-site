@@ -1,4 +1,6 @@
 {% load staticfiles %}
+{% load tz %}
+{% timezone "America/Los_Angeles" %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -37,7 +39,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="{% url 'home' %}">BHR</a>
+          <a class="navbar-brand" href="{% url 'home' %}">UCSC AutoRTBH</a>
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
@@ -72,3 +74,4 @@
     <script src="{% static "bhr/bootstrap-3.2.0-dist/js/bootstrap.min.js" %}"></script>
   </body>
 </html>
+{% endtimezone %}

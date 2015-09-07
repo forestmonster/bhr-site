@@ -29,7 +29,7 @@
         <td>{{ b.who }} </td>
         <td>{{ b.source }} </td>
         <td>{{ b.why }} </td>
-        <td>{{ b.added }} </td>
+        <td>{{ b.added|date:"M j, Y," }} {{ b.added|time }} </td>
         <td>{{ b.unblock_at }} </td>
         <td>
             <table class="table table-striped table-bordered">

@@ -25,7 +25,7 @@
         <td>{{ b.who__username }} </td>
         <td>{{ b.source }} </td>
         <td>{{ b.why }} </td>
-        <td>{{ b.added }} </td>
+        <td>{{ b.added|date:"M j, Y," }} {{ b.added|time }}</td>
         <td>{{ b.unblock_at }} </td>
         <td>{{ b.added|timesince:b.unblock_at }} </td>
     </tr>
